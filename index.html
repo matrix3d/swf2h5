@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>小游戏</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link href="style/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+	  
+	  figure {
+	background: #fff;
+	overflow: hidden;
+}
+
+/* Rotate */
+.hover06 figure:hover img {
+	-webkit-transform: rotate(15deg) scale(1.4);
+	transform: rotate(15deg) scale(1.4);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover06 figure img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+	  
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="style/album.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">小游戏大全</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">关注公众号</a></li>
+            <li><a href="#" class="text-white">官网</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>小游戏</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">小游戏</h1>
+      <p class="lead text-muted">很多小游戏，可以下载和查看</p>
+      <p>
+        <a href="#" class="btn btn-primary my-2">文件</a>
+        <a href="#" class="btn btn-secondary my-2">帮助</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row" id="therow">
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 offset-md-1 py-4">
+          <div class="btn-group" id="thebtngroup">
+				
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>小游戏大全 &copy; 上海小游戏, 请下载查看!</p>
+    <p>查看帮助</p>
+  </div>
+</footer>
+</body>
+</html>
+<script>
+	function getParameter(param) {
+		var reg = new RegExp(".*[?,&]"+param+"=(.*?)((&.*)|$)");
+		var obj = reg.exec(window.location.search);
+		if(obj)return obj[1];
+		else return null;
+	}
+	var fileNames = ["007-james-bond-1941.swf","1941-1099.swf","2-tank-rush-5443.swf","2013-wedding-trends-6597.swf","2d-paintball-1938.swf","2win-football-532.swf","3d-bike-race-4208.swf","3d-jetski-racing-1671.swf","3d-ping-pong-3497.swf","3d-pool-1018.swf","3d-racing-craze--1664.swf","3d-shooter-1939.swf","3d-swat-1940.swf","70s-rule-4742.swf","7th-inning-smash-555.swf","8-ball-1029.swf","80-days-2347.swf","9-to-5-2346.swf","a-blast--2170.swf"];
+	var swfpath=getParameter("path");
+	if(swfpath==null){
+		swfpath="swf";
+	}
+	var pageStr=getParameter("page");
+	if(pageStr==null){
+		pageStr="0";
+	}
+	var pagenum=parseInt(pageStr);
+	var numPrePage=16;
+	var numpage=Math.ceil(fileNames.length/numPrePage);
+	
+	function heredoc(fn) {
+		return fn.toString().split('\n').slice(1,-1).join('\n') + '\n'
+	}
+	 var tmpl = heredoc(function(){/*
+		<div class="col-md-3">
+          <div class="card mb-3 shadow-sm">
+		  <a href="game.html?swf=<%=swfpath%>/<%=str%>" target="_blank">
+            <div class="hover06 column"><div>
+			<figure>
+			<img src="<%=swfpath%>/<%=jpg%>" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title>
+			
+			</img>
+			</figure>
+			</div>
+				</div>
+			</a>
+            <div class="card-body">
+              <p class="card-text"><%=str0%></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="game.html?swf=<%=swfpath%>/<%=str%>" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	 */});
+			var ih="";
+		for(var i=0;i<numPrePage;i++){
+			var j=i+numPrePage*pagenum;
+			if(j<fileNames.length){
+			var str = fileNames[j];
+		ih+= tmpl
+		.replace(/\<%\=swfpath%\>/g,swfpath)
+		.replace(/\<%\=jpg%\>/g,str.replace(".swf",".jpg"))
+		.replace(/\<%\=str0%\>/g,str.replace(".swf",""))
+		.replace(/\<%\=str%\>/g,str)
+		;
+		}}
+		document.getElementById("therow").innerHTML=ih;
+		
+		
+		
+		var tmpl = heredoc(function(){/*
+		<a href="<%=path%>" class="btn btn-sm <%=btnstyle%>"><%=i1%></a>
+	 */});
+			var ih="";
+		var i=pagenum-5;
+					if(i<0){
+						i=0;
+					}
+					var len=i+10;
+					if(len>numpage){
+						len=numpage;
+					}
+
+				var p=window.location.search;
+				var pageStr=getParameter("page");
+				if(pageStr!=null){
+					p=p.replace("&page="+pageStr,"").replace("page="+pageStr,"");
+				}
+				if(p==""){
+					p="?";
+				}else if(p.length>1){
+					p+="&";
+				}
+			
+			for(;i<len;i++){
+		ih+= tmpl
+		.replace(/\<%\=path%\>/g,window.location.pathname+p+"page="+i)
+		.replace(/\<%\=i1%\>/g,i+1)
+		.replace(/\<%\=btnstyle%\>/g,i==pagenum?"btn-secondary":"btn-outline-secondary")
+		;
+		}
+		document.getElementById("thebtngroup").innerHTML=ih;
+</script>
+
+
+
+
+
